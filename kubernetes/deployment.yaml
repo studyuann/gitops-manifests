@@ -4,7 +4,7 @@ metadata:
   name: gitops-demo-app
   namespace: gitops-demo
 spec:
-  replicas: 2
+  replicas: 4
   selector:
     matchLabels:
       app: gitops-demo-app
@@ -21,7 +21,7 @@ spec:
             - containerPort: 5000
           env:
             - name: APP_VERSION
-              value: "401f23d"
+              value: "initial"
           readinessProbe:
             httpGet:
               path: /health
