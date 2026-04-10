@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: gitops-demo-app
-          image: sunnykid7/gitops-demo-app:401f23d
+          image: studyuann/gitops-demo-app:401f23d
           imagePullPolicy: Always
           ports:
             - containerPort: 5000
